@@ -1,0 +1,237 @@
+html,body
+{
+	height:100vh;
+	padding: 0;
+	margin:  0;
+}
+
+
+
+*{
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	box-sizing: border-box;
+}
+
+.wrapper{
+
+	min-width: 1050px;
+	min-height: 100%;
+	background-color: #141414;
+
+}
+
+
+.SignInContainer {
+
+background-color: #efefee;
+
+height:100vh;
+
+display:flex;
+
+align-items: center;
+
+justify-content: center;
+}
+
+.column {
+
+background-color:#fff;
+padding: 20px 35px;
+min-height: 300px;
+
+max-height: 100vh;
+
+width: 450px;
+
+box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+overflow-y: auto;
+
+}
+
+.column form{
+	display: flex;
+	flex-direction: column;
+	margin-top: 24px;
+
+}
+
+.column form input[type ="text"],
+.column form input[type="email"],
+.column form input[type="password"]{
+	font-size: 14px;
+	margin: 10px 0px;
+	border: none;
+	border-bottom:1px solid #dedede;
+	
+}
+
+.column form input[type="submit"] {
+
+background-color: #4285f4;
+color: #fff;
+height: 36px;
+width: 88px;
+border: none;
+border-radius: 3px;
+font-weight: 500;
+margin-top: 10px;
+margin-bottom: 20px;
+font-size: 16px;
+
+}
+
+.column .header{
+	padding: 20px 0px;
+
+}
+
+.column .header h3{
+	font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 16px;
+    color: #000;
+}
+.column .header span{
+	font-size: 14px;;
+}
+
+.column .header img{
+	width: 100px;
+}
+
+.column .signInMessage {
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.errorMessages {
+
+		color:#f00;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: center;
+}
+.previewContainer{
+	position: relative;
+	display: flex;
+
+}
+
+.previewContainer.small{
+	width: 230px;
+    height: 129px;
+    margin-right: 4px;
+	display: inline-flex;
+}
+
+.previewContainer.small img{
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.previewImage,
+.previewVideo{
+	width: 100%;
+}
+.previewOverlay{
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+}
+
+.previewOverlay .mainDetails h3{
+	color: #fff;
+    font-size: 40px;
+	margin: 15px 0px;
+}
+
+.previewOverlay .mainDetails{
+	position: relative;
+	top: 35%;
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.mainDetails .buttons button{
+	background-color: rgba(51,51,51,0.4);
+    color: #fff;
+    border: none;
+    min-width: 150px;
+    padding: 0px 38px;
+    height: 50px;
+    max-height: 50px;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+button i{
+	color: inherit;
+}
+
+.mainDetails button:hover{
+	background-color: #e6e6e6;
+	color:#000;
+}
+.category{
+	display:flex;
+	flex-direction:column;
+	padding:10px 0; 
+}
+.entities,
+.videos
+{
+	overflow-x:auto;
+	overflow-y:hidden;
+	white-space: nowrap;
+
+}
+.h3{
+	color:#e5e5e5;
+}
+a{
+	text-decoration:none;
+}
+
+a h3:hover{
+	color:#fff;
+}
+
+.previewCategories{
+
+	padding: 0 50px;
+}
+
+.errorBanner{
+
+	color: white;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+}
+.season .seasonNumber{
+
+	color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 50px;
+
+}
+
+
